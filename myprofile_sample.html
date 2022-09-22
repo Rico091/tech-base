@@ -1,0 +1,111 @@
+<html>
+<head>
+  <meta name="viewport" content="width=320, height=480, initial-scale=1.0, minimum-scale=1.0, maximum-scale=2.0, user-scalable=yes"><!-- for smartphone. ここは一旦、いじらなくてOKです。 -->
+	<meta charset="utf-8"><!-- 文字コード指定。ここはこのままで。 -->
+	<title>りこのプロフィール</title>
+
+</head>
+
+<body>
+
+
+<!-- 見出し 第１レベル -->
+<!--（氏名）の公開を避ける場合はイニシャルやニックネームで<OK-->
+<div style="background-color: burlywood">
+	<span style="color: darkcyan">
+		<h1 class="midashi_1"> りこのプロフィール </h1>
+	</span>
+</div>
+
+
+<!--自分を象徴するような画像を入れてみよう-->
+<!--画像も同じフォルダに保存すること-->
+<div style="background-color: honeydew">
+<img src="neko.jpg" alt="自分を象徴する写真など" title="プロフィール画像" width="320px" ><br>
+（画像についてひとこと：家で飼っている猫）
+</div>
+<hr>
+<!-- 見出し 第２レベル ・以下、h2レベルで項目を色々書いていきましょう -->
+<!-- 自己紹介で言いたい項目を見出しにいれて、文章をつくりましょう。項目名は編集OK。項目を足してもOK。 -->
+<div style="background-color: ivory">
+<span style="color: palevioletred">
+	<h2>所属など</h2>
+</span>
+　ゼミで各地の日本庭園などを巡ります。<br>
+　コンビニでアルバイトをしています<br>
+
+
+<span style="color: palevioletred">
+	<h2>趣味や属性</h2>
+</span>
+　旅行をするのが好きです！<br>
+　あと猫が好きです。<br>
+
+
+<!-- HTMLで出来る色々な表現を試す -->
+<!-- ↑文字に意味を持たせることもできます。strong は太字。ググったりして色々と調べてみましょう -->
+<!-- 例として今回は「リスト表示」を作ってみましょう。項目数が３で足りないなら足してもOKです -->
+<!-- 番号をふるなら ol タグ、番号がいらないなら ul タグ で囲って、項目は li タグで括ります。 -->
+<!-- ol ・ ul 片方でOK -->
+<span style="color: palevioletred">
+	<h2>私の好きなアーティスト・トップ３</h2>
+</span>
+
+<u><strong> 私の好きな日本のアーティスト・トップ3を紹介します！</strong></u><br>
+<!-- ↑文字に意味を持たせることもできます。strong は強調。太字になります。 -->
+<ol>
+	<span style="font-style: italic">
+		<li> Aimer</li>
+		<li> ずっと真夜中でいいのに</li>
+		<li> PEOPLE1</li>
+	</span>
+</ol>
+
+<u><strong> 好きなk-popアイドル</strong></u><br>
+<ul>
+	<span style="font-style: italic">
+		<li> aespa</li>
+		<li> IVE</li>
+		<li> TXT</li>
+	</span>
+</ul>
+</div>
+<hr>
+
+<!-- 以下は、見出しの名前は固定で、内容を編集してみましょう -->
+<div style="background-color: mistyrose">
+<span style="color: maroon">
+<h2>その他</h2>
+</span>
+<!-- 見出し 第３レベル -->
+<h3>使用PC</h3><!-- 編集して、自分の使うPCだけ残しましょう -->
+ Windows
+
+<h3>PC利用経験や、普段の使い方</h3>
+学校の課題をしたり動画を見たりするときに使ってます。
+
+<h3>自分の強みや弱みなど</h3>
+強み：行動力があります<br>
+弱み：かなりの人見知りです笑<br>
+
+
+<h3>TECH-BASE参加にあたり、意気込み</h3>
+初心者ですが頑張ります！よろしくお願いします！<br>
+</div>
+
+
+<hr>
+<a href="#midashi_1"> このページのTOPへ </a> ／ <a href="https://www.google.co.jp/" target="_blank"> ググる </a>
+
+<hr>
+
+<!-- 以下は投稿フォーム欄ですが、今は＆このままでは機能しておらずエラーが発生します。 -->
+<!-- したがって今はコピペするだけでOKです。スタートアップ以降のPHPミッションを進める際に、参考にしてください。 -->
+<form method="POST" action="">
+	お名前：<input type="text" name="name"><br>
+	コメント：<input type="text" name="comment"><br>
+	<input type="submit" name="submit" value="送信">
+</form>
+
+</body>
+</html>
